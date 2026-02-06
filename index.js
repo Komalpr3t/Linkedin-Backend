@@ -45,6 +45,8 @@ app.get("/", (req, res) => {
 
 //start the server and make it listen to the port specified in .env file
 //backend is now accessible at http://localhost:4000
-app.listen(process.env.PORT, () => {
-    console.log("Server is running on port ", process.env.PORT); //callback runs once the server starts successfully
-})
+// app.listen(process.env.PORT, () => {
+//     console.log("Server is running on port ", process.env.PORT); //callback runs once the server starts successfully
+// })
+
+module.exports = app
