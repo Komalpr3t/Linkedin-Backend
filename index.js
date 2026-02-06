@@ -16,9 +16,7 @@ const app = express();
 app.use(cookieParser());
 app.use(express.json()); //to parse json data in request body
 app.use(cors({
-    credentials: true,
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
 })); //to enable CORS
 
 //connect to mongodb 
